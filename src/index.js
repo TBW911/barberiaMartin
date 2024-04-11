@@ -12,9 +12,9 @@ const dbURI = process.env.DB_URI;
 
 
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect("mongodb+srv://martin1:qwerty123@api-rest.jijothv.mongodb.net/AlarmaBarberia?retryWrites=true&w=majority&appName=api-rest")
   .then(() => {
-    console.log('Conexión a MongoDB establecida correctamente');
+    console.log('Conexión a Mongo Atlas establecida correctamente');
   })
   .catch((error) => {
     console.error('Error al conectar a MongoDB:', error);
